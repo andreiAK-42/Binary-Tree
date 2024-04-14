@@ -13,9 +13,9 @@ namespace BinaryTree
     {
         private BinaryTreeNode<T> Root;
 
-        public void Add(T value)
+        public void Add(T Value)
         {
-            Root = AddTo(Root, value);
+            Root = AddTo(Root, Value);
         }
 
         private BinaryTreeNode<T> AddTo(BinaryTreeNode<T> Node, T Value)
@@ -25,13 +25,13 @@ namespace BinaryTree
                 return new BinaryTreeNode<T> { Value = Value };
             }
 
-            int comparer = Comparer<T>.Default.Compare(Value, Node.Value);
+            int Comparer = Comparer<T>.Default.Compare(Value, Node.Value);
 
-            if (comparer < 0)
+            if (Comparer < 0)
             {
                 Node.Left = AddTo(Node.Left, Value);
             }
-            else if (comparer > 0)
+            else if (Comparer > 0)
             {
                 Node.Right = AddTo(Node.Right, Value);
             }
@@ -89,27 +89,27 @@ namespace BinaryTree
             return ReverseOrderTraversal(Root).GetEnumerator();
         }
 
-        private IEnumerable<BinaryTreeNode<T>> NodeInOrderTraversal(BinaryTreeNode<T> node)
+        private IEnumerable<BinaryTreeNode<T>> NodeInOrderTraversal(BinaryTreeNode<T> Node)
         {
-            if (node != null)
+            if (Node != null)
             {
-                foreach (var leftNode in NodeInOrderTraversal(node.Left))
+                foreach (var LeftNode in NodeInOrderTraversal(Node.Left))
                 {
-                    yield return leftNode;
+                    yield return LeftNode;
                 }
 
-                yield return node;
+                yield return Node;
 
-                foreach (var rightNode in NodeInOrderTraversal(node.Right))
+                foreach (var RightNode in NodeInOrderTraversal(Node.Right))
                 {
-                    yield return rightNode;
+                    yield return RightNode;
                 }
             }
         }
 
-        public IEnumerator<T> GetCustomOrderEnumerator(Func<BinaryTreeNode<T>, IEnumerable<BinaryTreeNode<T>>> orderFunc)
+        public IEnumerator<T> GetCustomOrderEnumerator(Func<BinaryTreeNode<T>, IEnumerable<BinaryTreeNode<T>>> OrderFunc)
         {
-            return CustomOrderTraversal(Root, orderFunc).GetEnumerator();
+            return CustomOrderTraversal(Root, OrderFunc).GetEnumerator();
         }
 
         private IEnumerable<T> CustomOrderTraversal(BinaryTreeNode<T> Node, Func<BinaryTreeNode<T>, IEnumerable<BinaryTreeNode<T>>> OrderFunc)
@@ -118,11 +118,11 @@ namespace BinaryTree
             {
                 if (Node.Left != null)
                 {
-                    foreach (var leftNode in OrderFunc(Node.Left))
+                    foreach (var LeftNode in OrderFunc(Node.Left))
                     {
-                        foreach (var leftNodeValue in CustomOrderTraversal(leftNode, OrderFunc))
+                        foreach (var LeftNodeValue in CustomOrderTraversal(LeftNode, OrderFunc))
                         {
-                            yield return leftNodeValue;
+                            yield return LeftNodeValue;
                         }
                     }
                 }
@@ -131,11 +131,11 @@ namespace BinaryTree
 
                 if (Node.Right != null)
                 {
-                    foreach (var rightNode in OrderFunc(Node.Right))
+                    foreach (var RightNode in OrderFunc(Node.Right))
                     {
-                        foreach (var rightNodeValue in CustomOrderTraversal(rightNode, OrderFunc))
+                        foreach (var RightNodeValue in CustomOrderTraversal(RightNode, OrderFunc))
                         {
-                            yield return rightNodeValue;
+                            yield return RightNodeValue;
                         }
                     }
                 }
