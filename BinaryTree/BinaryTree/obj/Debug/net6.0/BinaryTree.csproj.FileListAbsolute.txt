@@ -1,0 +1,14 @@
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.AssemblyInfoInputs.cache
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.AssemblyInfo.cs
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.csproj.CoreCompileInputs.cache
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\bin\Debug\net6.0\BinaryTree.exe
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\bin\Debug\net6.0\BinaryTree.deps.json
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\bin\Debug\net6.0\BinaryTree.runtimeconfig.json
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\bin\Debug\net6.0\BinaryTree.dll
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\bin\Debug\net6.0\BinaryTree.pdb
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.dll
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\refint\BinaryTree.dll
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.pdb
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\BinaryTree.genruntimeconfig.cache
+C:\Users\XLEB_YSHEK\source\repos\BinaryTree\BinaryTree\obj\Debug\net6.0\ref\BinaryTree.dll
